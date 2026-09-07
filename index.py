@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Thuy An Nguyen
+# FILENAME: index.py
+# SPECIFICATION: This program reads a collection of documents, applies normalization and lemmatization, and builds an inverted index. like assignment 1 question 7 but in code
 # FOR: CS 4250 - Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 1 hour - I started late
 #-------------------------------------------------------------------------
 
 # Importing Python libraries
@@ -15,6 +15,12 @@ data = pd.read_csv("collection.csv")
 # Defining the dictionary used for lemmatization
 # --> add your Python code here
 lemmas = ?
+lemmas = {
+    "running": "run",
+    "jumps": "jump",
+    "easily": "easy",
+    "fairly": "fair"
+}
 
 # Creating the data structure that will store the inverted index
 invertedIndex = {}
