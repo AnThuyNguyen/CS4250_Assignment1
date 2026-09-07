@@ -3,7 +3,7 @@
 # FILENAME: index.py
 # SPECIFICATION: This program reads a collection of documents, applies normalization and lemmatization, and builds an inverted index. like assignment 1 question 7 but in code
 # FOR: CS 4250 - Assignment #1
-# TIME SPENT: 1 hour - I started late
+# TIME SPENT: 45 minutes
 #-------------------------------------------------------------------------
 
 # Importing Python libraries
@@ -65,4 +65,4 @@ for i, row in data.iterrows():
 # term2 : ['Doc3']
 # --> add your Python code here
 for term in sorted(invertedIndex.keys()):
-    print(f"{term} : {invertedIndex[term]}")
+    print(f"{term:<10} : {invertedIndex[term]}") 
